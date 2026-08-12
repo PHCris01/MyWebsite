@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Structure</title>
+    <link rel="icon" href="/image.img/SRCB_logo.png">
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+
+<nav>
+    <div class="brand-container">
+        <img src="/image.img/SRCB_logo.png" width="48px">
+        <h2 class="title">St. Rita's College of Balingasag</h2>
+    </div>
+</nav>
+
+<div class="form2">
+        <form action="home.html" onsubmit="return handleSubmit()">
+            <h1>Login Structure</h1>
+
+            Gmail:<br><input id="gmail" type="gmail" placeholder="username@gmail.com" required><br><br>
+            Password:<br><input id="password" type="password" placeholder="********" required><br><br>
+
+            <div id="controls">
+                <button type="submit" class="btn">Log in</button>
+            </div>
+        </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="myLan.js"></script>
+</body>
+</html>

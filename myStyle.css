@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-image:url("/image.img/SRCB_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 5px 15px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.5);
+}
+
+.brand-container {
+    display: inline-block;
+}
+
+.title {
+    display: inline-block;
+    margin: 0px;
+    color: white;
+    font-family: arial;
+    position: relative;
+    top: 0px;
+}
+
+.btn {
+    margin: 2%;
+    background: aqua;
+    padding: 10px 25px;
+    font-family: arial;
+    text-decoration:none;
+    border-radius: 25px;
+    transition: 0.2s;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.5);
+}
+
+.btn:hover {
+    background-color:aquamarine;
+    padding: 10px 25px;
+}
+
+.form {
+    text-align: center;
+    padding: 30px 30px;
+    border-radius: 50px;
+    margin: 25px 300px;
+    background-color: rgba(0,255,255,0.5);
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.5);
+}
+
+#imgBox {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#qrImage {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logout {
+    background: aqua;
+    padding: 10px 25px;
+    font-family: arial;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.2s;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+#logout {
+    background-color: aquamarine;
+}
+
+.form2 {
+    text-align: center;
+    padding: 60px 60px;
+    border-radius: 50px;
+    margin: 25px 400px;
+    background-color: rgba(0,255,255,0.5);
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.5);
+}
+
+input {
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}

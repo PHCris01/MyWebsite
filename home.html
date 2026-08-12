@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="icon" href="/image.img/SRCB_logo.png">
+            <link rel="stylesheet" href="myStyle.css">
+        
+        <title>Management System for SRCB</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="SRCB admission slip">
+        <meta name="keywords" content="st. ritas college college of balingasag, admission slip">
+        <meta name="author" content="Balangyao Cris Earl, Embate Charls Russia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <div class="brand-container">
+                    <img src="/image.img/SRCB_logo.png" width="48px">
+                    <h2 class="title">St. Rita's College of Balingasag</h2>
+                </div>
+                <button type="button" id="logout">Log out</button>
+            </div>
+        </nav>        
+    <br>
+
+    <div class="form">
+        <form onsubmit="return handleSubmit()">
+                <h1>Admission Slip</h1>
+                <div class="inputs">
+                    <label>Name:</label><br>
+                    <input type="text" id="qrText" placeholder="Family name, first name, midle name" size="35" required autocomplete="off"><br><br>
+                    <label>Grade/Section:</label><br>
+                    <input type="text" id="qrGrade" required autocomplete="off"/><br><br>
+                    <label>Date:</label><br>
+                    <input type="date" id="qrDate" required autocomplete="off"><br><br>
+                    <label>Adviser:</label><br>
+                    <input type="text" id="qrAdviser" required autocomplete="off"/><br><br>
+                    <label>Remark</label><br>
+                    <textarea cols="35" rows="5" id="qrRemark" autocomplete="off"></textarea>
+                </div>
+                <div class="btn-container">
+                    <button type="reset" class="btn">reset</button>
+                    <button type="submit" class="btn">submit</button>
+                </div>
+        </form>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+        <script src="myLan.js"></script> 
+    </body>
+</html>

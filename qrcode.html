@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Result</title>
+    <link rel="icon" href="/image.img/SRCB_logo.png">
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="brand-container">
+            <img src="/image.img/SRCB_logo.png" width="48px">
+            <h2 class="title">St. Rita's College of Balingasag</h2>
+        </div>
+    </nav>
+
+    <div class="form">
+        <form action="home.html">
+            <h2>Admission Slip QR</h2>
+            <div id="userInfo"></div><br>
+            <canvas id="qrCanvas"></canvas><br><br>
+            <button type="done" class="btn">Done</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const grade = params.get('grade');
+        const date = params.get('date');
+        const adviser = params.get('adviser');
+        const remark = params.get('remark');
+
+        const content = `Name: ${name}\nGrade: ${grade}\nDate: ${date}\nAdviser: ${adviser}\nRemark: ${remark}`;
+        document.getElementById("userInfo").innerText = content;
+
+        QRCode.toCanvas(document.getElementById('qrCanvas'), content, function (error) {
+            if (error) console.error(error);
+        });
+        });
+    </script>
+</body>
+</html>
