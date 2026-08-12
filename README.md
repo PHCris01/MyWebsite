@@ -1,2 +1,0 @@
-# MyWebsite
-SRCB Admission Slip
